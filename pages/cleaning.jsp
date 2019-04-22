@@ -53,12 +53,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Accueil
+                Home
                 <small>Version 1.0</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
-                <li class="active">Accueil</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Home</li>
             </ol>
         </section>
 
@@ -72,7 +72,7 @@
                     <!-- TABLE: LATEST ORDERS -->
 
                     <div class="form-group">
-                        <label>Choisissez le log sur lequel vous souhaitez tester</label>
+                        <label> Choose the log you want to proceed </label>
                         <select class="form-control select2" style="width: 100%;">
                             <option selected="selected">dbpedia</option>
                             <option>wikidata</option>
@@ -87,7 +87,7 @@
 
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Résultats</h3>
+                            <h3 class="box-title">Results</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -102,73 +102,35 @@
                                     <thead >
                                     <tr>
                                         <th>Phase</th>
-                                        <th>Nombre de requêtes</th>
-                                        <th>Nombre de requêtes résultantes</th>
-                                        <th>Durée d'execution</th>
-                                        <th>Pourcentage de réduction</th>
+                                        <th>Number of queries</th>
+                                        <th>Number of resulting queries </th>
+                                        <th>Execution time</th>
+                                        <th>Percentage decrease</th>
                                     </tr>
                                     </thead>
                                     <tbody >
                                     <tr>
-                                        <td><a href="examples/invoice.html">OR9842</a></td>
-                                        <td>Call of Duty IV</td>
-                                        <td><span class="label label-success">Shipped</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                                        </td>
+                                        <td>Cleaning</td>
+                                        <td> ? </td>
+                                        <td> ? </td>
+                                        <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-red">55%</span></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="examples/invoice.html">OR1848</a></td>
-                                        <td>Samsung Smart TV</td>
-                                        <td><span class="label label-warning">Pending</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                                        </td>
+                                        <td>Deduplication </td>
+                                        <td> ? </td>
+                                        <td> ? </td>
+                                        <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-yellow">70%</span></td>
                                     </tr>
                                     <tr>
-                                        <td><a href="examples/invoice.html">OR7429</a></td>
-                                        <td>iPhone 6 Plus</td>
-                                        <td><span class="label label-danger">Delivered</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                                        </td>
+                                        <td>Validation</td>
+                                        <td> ? </td>
+                                        <td> ? </td>
+                                        <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-light-blue">30%</span></td>
                                     </tr>
-                                    <tr >
-                                        <td ><a href="examples/invoice.html">OR7429</a></td>
-                                        <td>Samsung Smart TV</td>
-                                        <td><span class="label label-info">Processing</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
-                                        </td>
-                                        <td><span class="badge bg-green">90%</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="examples/invoice.html">OR1848</a></td>
-                                        <td>Samsung Smart TV</td>
-                                        <td><span class="label label-warning">Pending</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="examples/invoice.html">OR7429</a></td>
-                                        <td>iPhone 6 Plus</td>
-                                        <td><span class="label label-danger">Delivered</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="examples/invoice.html">OR9842</a></td>
-                                        <td>Call of Duty IV</td>
-                                        <td><span class="label label-success">Shipped</span></td>
-                                        <td>
-                                            <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                                        </td>
-                                    </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -177,8 +139,7 @@
                         <!-- /.box-body -->
                         <div class="box-footer clearfix">
                             <a href="javascript:void(0)" class="btn  bg-red-gradient pull-left">Annuler</a>
-
-                            <a  href="cleaning.j" class="btn  btn-default bg-purple-gradient pull-right">n+1? selon l'étape n</a>
+                            <a href="javascript:void(0)" class="btn  btn-default bg-purple-gradient pull-right">n+1? selon l'étape n</a>
                         </div>
                         <!-- /.box-footer -->
                     </div>
