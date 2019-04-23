@@ -5,7 +5,11 @@
   Time: 16:43
   To change this template use File | Settings | File Templates.
 --%>
+
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,22 +115,22 @@
                                     <tbody >
                                     <tr>
                                         <td>Cleaning</td>
-                                        <td> ? </td>
-                                        <td> ? </td>
+                                        <td> ${queriesNumber}  </td>
+                                        <td> ${cleanedQueriesNumber}</td>
                                         <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-red">55%</span></td>
                                     </tr>
                                     <tr>
-                                        <td>Deduplication </td>
-                                        <td> ? </td>
-                                        <td> ? </td>
+                                        <td>Deduplication</td>
+                                        <td> ${cleanedQueriesNumber} </td>
+                                        <td> ${dedupQueriesNumber} </td>
                                         <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-yellow">70%</span></td>
                                     </tr>
                                     <tr>
                                         <td>Validation</td>
-                                        <td> ? </td>
-                                        <td> ? </td>
+                                        <td> ${dedupQueriesNumber}  </td>
+                                        <td> ${validatedQueriesNumber} </td>
                                         <td> <div class="text-muted"> <i class="fa fa-clock-o"></i> 5:15 </div> </td>
                                         <td><span class="badge bg-light-blue">30%</span></td>
                                     </tr>
@@ -138,8 +142,8 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer clearfix">
-                            <a href="javascript:void(0)" class="btn  bg-red-gradient pull-left">Annuler</a>
-                            <a href="javascript:void(0)" class="btn  btn-default bg-purple-gradient pull-right">n+1? selon l'étape n</a>
+                            <a href="javascript:void(0)" class="btn  bg-red-gradient pull-left">Cancel</a>
+                            <a href="javascript:void(0)" class="btn  btn-default bg-purple-gradient pull-right">Construct MD graphs</a>
                         </div>
                         <!-- /.box-footer -->
                     </div>
